@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+        </title>
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.css"
+        />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.js">
+        </script>
+        <script src="my.js">
+        </script>
+    </head>
+    
+    <body>
+        <!-- inicio -->
+        <div data-role="page" id="page1">
+            <div data-theme="b" data-role="header">
+                <span class="ui-title">
+                </span>
+                <div style=" text-align:center">
+                    <img style="width: 280px; height: 65px" src="http://assets.codiqa.com/ps/40412/d956b6c8fdc06041logoriba.jpg">
+                </div>
+                <div>
+                    <p style="text-align: center; ">
+                        <b>
+                            RS - Sistema de Fuerza de Venta
+                        </b>
+                    </p>
+                </div>
+            </div>
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textarea2">
+                            Usuario
+                        </label>
+                        <textarea name="" id="textarea2" placeholder="" data-mini="true"></textarea>
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textarea1">
+                            Usuario
+                        </label>
+                        <textarea name="" id="textarea1" placeholder="" data-mini="true"></textarea>
+                    </fieldset>
+                </div>
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="#page1" data-theme="b" data-icon="">
+                                Salir
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page2" data-theme="b" data-icon="" class="ui-btn-active ui-state-persist">
+                                Entrar
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- menu_login -->
+        <div data-role="page" data-theme="b" id="page2">
+            <div data-theme="b" data-role="header" data-position="fixed">
+                <span class="ui-title">
+                </span>
+                <div style=" text-align:center">
+                    <img style="width: 280px; height: 65px" src="http://assets.codiqa.com/ps/40412/d9012737cb662d1alogoriba.jpg">
+                </div>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Menú Pincipal
+                    </li>
+                    <li data-theme="d">
+                        <a href="#page6" data-transition="slide">
+                            Visita
+                        </a>
+                    </li>
+                    <li data-theme="d">
+                        <a href="#page1" data-transition="slide">
+                            Consulta de Productos
+                        </a>
+                    </li>
+                    <li data-theme="d">
+                        <a href="#page1" data-transition="slide">
+                            Consulta de Pagos
+                        </a>
+                    </li>
+                    <li data-theme="d">
+                        <a href="#page1" data-transition="slide">
+                            Enviar Pedido a Oficina
+                        </a>
+                    </li>
+                    <li data-theme="d">
+                        <a href="#page1" data-transition="slide">
+                            Salir Sistema
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div data-role="tabbar" data-iconpos="top" data-theme="a">
+                <ul>
+                    <li>
+                        <a href="#page1" data-theme="" data-icon="home">
+                            Atrás
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-theme="" data-icon="star">
+                            Two
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page1" data-theme="" data-icon="info">
+                            Three
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- visita_zona -->
+        <div data-role="page" data-theme="b" id="page6">
+            <div data-theme="b" data-role="header" data-position="fixed">
+                <span class="ui-title">
+                </span>
+                <div style="">
+                    <img style="width: 280px; height: 65px" src="http://assets.codiqa.com/ps/40412/d9012737cb662d1alogoriba.jpg">
+                </div>
+                <div>
+                    <a href="" data-transition="fade">
+                        ZONA: Nombre de Cliente
+                    </a>
+                </div>
+            </div>
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="searchinput1">
+                        </label>
+                        <input name="" id="searchinput1" placeholder="" value="" type="search">
+                    </fieldset>
+                </div>
+                <div data-role="collapsible-set">
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            Productos Ribas Smith
+                        </h3>
+                        <div data-role="collapsible-set">
+                            <div data-role="collapsible" data-collapsed="false">
+                                <h3>
+                                    Panes
+                                </h3>
+                                <div style="">
+                                    <img style="width: 235px; height: 70px" src="http://assets.codiqa.com/ps/40412/f91277e705c16cbb14.jpg">
+                                </div>
+                                <div id="checkboxes7" data-role="fieldcontain">
+                                    <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+                                        <legend>
+                                        </legend>
+                                        <input id="checkbox14" name="" type="checkbox">
+                                        <label for="checkbox14">
+                                            Checkbox
+                                        </label>
+                                        <input id="checkbox15" name="" type="checkbox">
+                                        <label for="checkbox15">
+                                            Checkbox
+                                        </label>
+                                        <input id="checkbox16" name="" type="checkbox">
+                                        <label for="checkbox16">
+                                            Checkbox
+                                        </label>
+                                        <input id="checkbox17" name="" type="checkbox">
+                                        <label for="checkbox17">
+                                            Checkbox
+                                        </label>
+                                        <input id="checkbox18" name="" type="checkbox">
+                                        <label for="checkbox18">
+                                            Checkbox
+                                        </label>
+                                        <input id="checkbox19" name="" type="checkbox">
+                                        <label for="checkbox19">
+                                            Checkbox
+                                        </label>
+                                    </fieldset>
+                                </div>
+                                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                                    <li data-role="list-divider" role="heading">
+                                        Divider
+                                    </li>
+                                    <li data-theme="c">
+                                        <a href="#" data-transition="slide">
+                                            Button
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div data-role="collapsible">
+                                <h3>
+                                    Section Header
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-role="collapsible">
+                        <h3>
+                            Section Header
+                        </h3>
+                        <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                            <li data-role="list-divider" role="heading">
+                                Divider
+                            </li>
+                            <li data-theme="c">
+                                <a href="#" data-transition="slide">
+                                    Button
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div data-role="collapsible">
+                        <h3>
+                            Section Header
+                        </h3>
+                    </div>
+                </div>
+                <div data-role="collapsible-set">
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            Selección por Búsqueda
+                        </h3>
+                        <div id="checkboxes6" data-role="fieldcontain">
+                            <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+                                <legend>
+                                </legend>
+                                <input id="checkbox10" name="" type="checkbox">
+                                <label for="checkbox10">
+                                    Checkbox
+                                </label>
+                                <input id="checkbox11" name="" type="checkbox">
+                                <label for="checkbox11">
+                                    Checkbox
+                                </label>
+                                <input id="checkbox12" name="" type="checkbox">
+                                <label for="checkbox12">
+                                    Checkbox
+                                </label>
+                                <input id="checkbox13" name="" type="checkbox">
+                                <label for="checkbox13">
+                                    Checkbox
+                                </label>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+                <div id="checkboxes1" data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-type="vertical">
+                        <legend>
+                            Choose:
+                        </legend>
+                        <input id="checkbox1" name="" type="checkbox">
+                        <label for="checkbox1">
+                            Checkbox
+                        </label>
+                    </fieldset>
+                </div>
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="#page6" data-theme="" data-icon="">
+                                Atrás
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page2" data-theme="" data-icon="">
+                                Tomar Pedido
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="selectmenu2">
+                        Zona:
+                    </label>
+                    <select name="">
+                        <option value="option1">
+                            Ciudad de Panamá
+                        </option>
+                        <option value="value">
+                            Colon
+                        </option>
+                        <option value="value">
+                            Option
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div data-role="tabbar" data-iconpos="top" data-theme="a">
+                <ul>
+                    <li>
+                        <a href="#page1" data-theme="" data-icon="home">
+                            Atrás
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-theme="" data-icon="star">
+                            Two
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page1" data-theme="" data-icon="info">
+                            Three
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- tomar_pedido -->
+        <div data-role="page" data-theme="b" id="page7">
+            <div data-theme="b" data-role="header" data-position="fixed">
+                <span class="ui-title">
+                </span>
+                <div style="">
+                    <img style="width: 280px; height: 65px" src="http://assets.codiqa.com/ps/40412/d9012737cb662d1alogoriba.jpg">
+                </div>
+            </div>
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <label for="selectmenu6">
+                        Zona:
+                    </label>
+                    <select name="">
+                        <option value="option1">
+                            Ciudad de Panamá
+                        </option>
+                        <option value="value">
+                            Colon
+                        </option>
+                        <option value="value">
+                            Option
+                        </option>
+                    </select>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="selectmenu7">
+                        Cliente:
+                    </label>
+                    <select name="">
+                        <option value="option1">
+                            Option 1
+                        </option>
+                    </select>
+                </div>
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="#page6" data-theme="" data-icon="">
+                                Atrás
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page2" data-theme="" data-icon="">
+                                Tomar Pedido
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="tabbar" data-iconpos="top" data-theme="a">
+                <ul>
+                    <li>
+                        <a href="#page1" data-theme="" data-icon="home">
+                            Atrás
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-theme="" data-icon="star">
+                            Two
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page1" data-theme="" data-icon="info">
+                            Three
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- lol -->
+        <div data-role="page" id="page8">
+            <div data-role="content">
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Divider
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            Button
+                            <span class="ui-li-count">
+                                tertert
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div data-role="tabbar" data-iconpos="top" data-theme="a">
+                <ul>
+                    <li>
+                        <a href="#page1" data-theme="" data-icon="home">
+                            Atrás
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-theme="" data-icon="star">
+                            Two
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page1" data-theme="" data-icon="info">
+                            Three
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script>
+              //App custom javascript
+        </script>
+    </body>
+
+</html>
